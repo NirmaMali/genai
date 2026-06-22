@@ -51,18 +51,8 @@ def find_similar_words(model, word, top_n=5):
     else:
         return ["Word not in vocabulary"]
 
-tech_words = [
-    "computer",
-    "software",
-    "hardware",
-    "algorithm",
-    "internet",
-    "network",
-    "data",
-    "cloud",
-    "AI",
-    "machine"
-]
+tech_words = ["computer","software","hardware","algorithm","internet","network","data",
+    "cloud","AI","machine"]
 
 print("Fetching word embeddings...")
 word_vectors = get_word_vectors(word2vec_model, tech_words)
